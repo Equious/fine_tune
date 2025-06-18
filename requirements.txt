@@ -1,0 +1,11 @@
+streamlit
+opencv-python
+mediapipe
+SpeechRecognition
+requests
+google-generativeai
+numpy
+torch
+transformers
+accelerate
+pandas

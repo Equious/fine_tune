@@ -1,0 +1,52 @@
+{
+    "Squat": {
+      "description": "A lower body exercise focusing on glutes, quads, and hamstrings.",
+      "trigger": {
+        "metric_name": "Back Straightness",
+        "threshold": 160,
+        "comparison": "less_than"
+      },
+      "criteria": [
+        {
+          "name": "Left Knee Bend",
+          "landmarks": ["LEFT_HIP", "LEFT_KNEE", "LEFT_ANKLE"],
+          "ideal_angle": 90,
+          "threshold": 15,
+          "focus": "min"
+        },
+        {
+          "name": "Right Knee Bend",
+          "landmarks": ["RIGHT_HIP", "RIGHT_KNEE", "RIGHT_ANKLE"],
+          "ideal_angle": 90,
+          "threshold": 15,
+          "focus": "min"
+        },
+        {
+          "name": "Back Straightness",
+          "landmarks": ["LEFT_SHOULDER", "LEFT_HIP", "LEFT_KNEE"],
+          "ideal_angle": 90,
+          "threshold": 20,
+          "focus": "avg"
+        }
+      ]
+    },
+    "Warrior Pose": {
+      "description": "A foundational yoga pose that strengthens the legs and opens the hips and chest.",
+      "criteria": [
+        {
+          "name": "Front Knee Bend (Left)",
+          "landmarks": ["LEFT_HIP", "LEFT_KNEE", "LEFT_ANKLE"],
+          "ideal_angle": 90,
+          "threshold": 15,
+          "focus": "avg"
+        },
+        {
+          "name": "Arm Alignment",
+          "landmarks": ["LEFT_WRIST", "LEFT_SHOULDER", "RIGHT_SHOULDER"],
+          "ideal_angle": 180,
+          "threshold": 20,
+          "focus": "avg"
+        }
+      ]
+    }
+  }
